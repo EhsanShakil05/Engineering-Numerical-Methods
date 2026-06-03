@@ -1,1 +1,1 @@
-# Secant Method Solver
+# Secant Method Solver in MATLAB
