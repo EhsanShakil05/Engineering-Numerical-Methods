@@ -1,1 +1,1 @@
-# Create Secant Method Solver
+# Secant Method Solver
