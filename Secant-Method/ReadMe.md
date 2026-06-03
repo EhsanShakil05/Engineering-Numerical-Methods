@@ -10,15 +10,11 @@ To determine the root of a nonlinear equation using the Secant Method.
 
 Given the nonlinear equation:
 
-[
 f(x)=x^3-x-2
-]
 
 find the root of:
 
-[
 f(x)=0
-]
 
 using the Secant Method.
 
