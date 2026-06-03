@@ -10,11 +10,15 @@ To determine the root of a nonlinear equation using the Secant Method.
 
 Given the nonlinear equation:
 
-f(x)=x^3-x-2
+```text
+f(x) = x^3 - x - 2
+```
 
 find the root of:
 
-f(x)=0
+```text
+f(x) = 0
+```
 
 using the Secant Method.
 
@@ -26,9 +30,10 @@ The Secant Method is a derivative-free numerical root-finding technique that use
 
 The iterative formula is:
 
-[
-x_{n+1}=x_n-\frac{f(x_n)(x_n-x_{n-1})}{f(x_n)-f(x_{n-1})}
-]
+```text
+x(n+1) = x(n) - [f(x(n)) × (x(n) - x(n-1))] /
+                  [f(x(n)) - f(x(n-1))]
+```
 
 Unlike the Newton-Raphson Method, the Secant Method does not require analytical evaluation of the derivative.
 
@@ -38,23 +43,24 @@ Unlike the Newton-Raphson Method, the Secant Method does not require analytical 
 
 * User-defined initial guesses
 * Derivative-free root finding
-* Iteration tracking and convergence monitoring
+* Iteration tracking
+* Convergence monitoring
 * Numerical stability check
 * Convergence visualization
 * Root verification through graphical plotting
-* Robustness testing using multiple starting values
+* Robustness testing with multiple starting values
 
 ---
 
 ## Key Results
 
-| Parameter           | Value              |
-| ------------------- | ------------------ |
-| Function            | (x^3-x-2)          |
-| Initial Guesses     | (1,2)              |
-| Root Obtained       | 1.521380           |
-| Tolerance           | (1 \times 10^{-6}) |
-| Iterations Required | 7                  |
+| Parameter           | Value         |
+| ------------------- | ------------- |
+| Function            | `x^3 - x - 2` |
+| Initial Guesses     | `(1, 2)`      |
+| Root Obtained       | `1.521380`    |
+| Tolerance           | `1e-6`        |
+| Iterations Required | `7`           |
 
 ---
 
@@ -69,9 +75,9 @@ Unlike the Newton-Raphson Method, the Secant Method does not require analytical 
 ### Observations
 
 * Faster than the Bisection Method
-* Slower than Newton-Raphson
+* Slower than the Newton-Raphson Method
 * Does not require derivative evaluation
-* Provides a balance between efficiency and simplicity
+* Provides an excellent balance between efficiency and simplicity
 
 ---
 
@@ -88,11 +94,36 @@ Unlike the Newton-Raphson Method, the Secant Method does not require analytical 
 
 ## Files
 
-* `secant_method.m`
-* `Secant_Method_Report.pdf`
-* `iteration_convergence.png`
-* `root_plot.png`
-* `output.png`
+```text
+Secant-Method
+│
+├── secant_method.m
+├── Secant_Method_Report.pdf
+├── iteration_convergence.png
+├── root_plot.png
+└── output.png
+```
+
+---
+
+## Example Output
+
+```text
+Enter Initial Guess 1: 1
+Enter Initial Guess 2: 2
+
+Iterations    x
+1             1.33333333
+2             1.46268657
+3             1.53116943
+4             1.52092642
+5             1.52137632
+6             1.52137971
+7             1.52137971
+
+Iterations = 7
+Root = 1.521380
+```
 
 ---
 
